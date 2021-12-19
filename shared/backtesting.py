@@ -37,7 +37,7 @@ def get_x_y_dates(ts, ycol='demand', dropcols=['product_category_name']):
     return X, y, dates
 
 def train_test_iteration(ts, model_func, split_day, horizon=7,
-                         n_splits=20, plot=False):
+                         n_splits=20):
     metrics = {}
     X, y, dates = get_x_y_dates(ts)
     tscv = get_tscv(ts, split_day, horizon, n_splits)

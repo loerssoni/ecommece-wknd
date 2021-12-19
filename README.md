@@ -6,7 +6,14 @@ Apparently the data is also biased due to the fact that only orders where a revi
 
 ### repo structure
 shared contains modularized code constructed that define functions for data ingestion, preprocessing, backtesting etc.
+
 exploratory contains EDA / Experiment type work in notebooks
+
+pipeline contains definition of a model pipeline (Kubeflow?)
+
+#### todo
+- serving scripts / conceptual workflow of pulling data and creating batch preditions
+- pipeline concept work
 
 
 #### notes
@@ -18,7 +25,3 @@ These provide opportunity for both feature engineering for different tasks and i
 Examples could be
 - customer on churn/CLV (+effects of e.g. delivery times, location remoteness, or review favourability)
 - payments (on-time, defaults etc.)
-
-
-#### todo
-- some thoughts on actually productionizing the model
