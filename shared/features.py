@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 def construct_outlier_variables(df, outlier_days=['2017-11-24'], day_name='outlier_day',
                                 outlier_weeks = ['2017-11-23'], week_name='outlier_week'):
     outlier_days = pd.to_datetime(outlier_days).date
@@ -31,6 +34,6 @@ def construct_features(df, outlier_args={}, horizon=7, lag_upto=10, roll_upto=10
     df = construct_lags(df, col='demand', horizon=horizon, upto=roll_upto)
     return df
 
-def add_total(df, total_preds):
+def join_total(df, total_preds):
     df = df.join(total_preds, rsuffix='_pred_total')
     return df

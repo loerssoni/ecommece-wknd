@@ -7,7 +7,8 @@ setup(
     license='BSD 2-clause',
     packages=['shared'],
     install_requires=['boto3',
-                      'pandas',                     
+                      'pandas',
+                      'scikit-learn'
                       ],
 
     classifiers=[
