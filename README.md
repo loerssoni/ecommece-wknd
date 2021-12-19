@@ -16,6 +16,5 @@ Examples could be
 
 
 #### todo
-- experiments to construct pay-day -type variables for demand forecasting
 - initial model experiments + pipeline construction for aggregate and product categories
 - perhaps experiments with external data, e.g. weather?
