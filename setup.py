@@ -2,8 +2,7 @@ from setuptools import setup
 setup(
     name='ecommerce',
     version='0.1.0',    
-    author='Lauri Heikka',
-    author_email='lauri.heikka@gmail.com',
+    author='loerssoni',
     license='BSD 2-clause',
     packages=['shared'],
     install_requires=['boto3',
